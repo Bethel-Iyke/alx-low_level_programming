@@ -15,12 +15,12 @@ if (n > 98)
 {
 
 for (; n > 98; --n)
-printf(" % d, ", n);
+printf("%d, ", n);
 }
 else
 {
 for (; n <= 97; n++)
-printf(" % d, ", n);
+printf("%d, ", n);
 }
 printf("98\n");
 
