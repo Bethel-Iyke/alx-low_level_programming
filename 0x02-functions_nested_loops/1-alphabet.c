@@ -1,17 +1,21 @@
 #include "main.h"
-
 /**
- * main - check the code
+ * print_alphabet - print alphabets
+ * Description: A code that prints out the alphabets
  *
- * Return:Always 0.
+ * Return: return 0.
  */
 
-void print_alphabet(void);
-int main(void)
+void print_alphabet(void)
+{
+char alpha;
+for (alpha = 'a'; alpha <= 'z'; alpha++)
 {
 
-print_alphabet();
+_putchar(alpha);
 
-_putchar ('\n');
-return (0);
+}
+
+putchar('\n');
+
 }
