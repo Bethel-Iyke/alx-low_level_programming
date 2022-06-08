@@ -3,7 +3,7 @@
 #include <math.h>
 
 /**
- * print_to_98 - prints all numbers ti 98
+ * print_to_98 - prints all numbers to 98
  * @n: int
  * return 0
  */
