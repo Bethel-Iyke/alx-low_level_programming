@@ -14,11 +14,12 @@ if (size > 0)
 {
 for (row = 1; row <= size; row++)
 {
-for
+for (col = size - row; col > 0; col--)
 
-(col = size - row; col > 0; col--)
 _putchar(' ');
+
 for (col = 0; col < row; col++)
+
 _putchar(35);
 
 if (row == size)
