@@ -1,0 +1,1 @@
+My array pointer directory
