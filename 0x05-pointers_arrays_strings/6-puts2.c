@@ -9,6 +9,7 @@
 void puts2(char *str)
 
 {
+
 int len = 0;
 int l = 0;
 char *y = str;
@@ -20,7 +21,7 @@ y++;
 len++;
 }
 l = len - 1;
-for (z = 0 ; z <= 1 ; z++)
+for (z = 0 ; z <= l ; z++)
 {
 if (z % 2 == 0)
 {
