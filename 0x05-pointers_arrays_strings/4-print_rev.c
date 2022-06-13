@@ -1,16 +1,23 @@
 #include "main.h"
 
 /**
- * main - check the code
- *
- * Return: Always 0
+ * print_rev - toma la cadena de la function.
+ * @s: value taken frm main
+ * Return (0)
  */
-int main(void)
+
+void print_rev(char *s)
+
 {
-char *str;
 
-str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
+int len;
 
-print_rev(str);
-return (0);
+for (len = 0; s[len] != '\0' ; len++)
+{
+}
+for (len = len - 1; len >= 0; len--)
+{
+_putchar(s[len]);
+}
+_putchar('\n');
 }
