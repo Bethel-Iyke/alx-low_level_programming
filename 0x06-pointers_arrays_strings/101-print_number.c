@@ -1,40 +1,31 @@
 #include "main.h"
 
 /**
- * print_number - takes an integer and prints it with _putchar
- * @n: integer to printed
+ * print_number - prints an integer using _putchar
+ * @n: integer to be printed
  */
 
 void print_number(int n)
-
 {
-
-int count, y, k;
-y = 1000000000;
-if (n == 0)
-
-_putchar('0');
-
-else if (n > 0)
-n *= -1;
-else
-
-_putchar('-');
-
-for (count = 0; count < 10; count++, y /= 10)
+unsigned int num;
+/* print - infront of negative numbers */
+if (n < 0)
 {
-if (n / y == 0)
-continue;
+	_putchar('-');
+	num = -n;
+}
 else
 {
-k = (-(n / y) % 10);
-
-if (k < 0)
-
-k *= -1;
-
-_putchar(k + '0');
-
+num = n;
 }
-}
+/* print the digits infront of the current digit */
+
+if (num / 10)
+
+print_number(num / 10);
+
+
+/* print current digit */
+_putchar((num % 10) + '0');
+
 }
