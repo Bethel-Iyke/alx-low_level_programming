@@ -1,15 +1,17 @@
 #include "main.h"
-#include <string.h>
 
 /**
- * *_memset - fills a block of memory with constant byte
- * @s: starting address of memory to be filled
- * @b: the desired value
+ * *_memset - memset function
+ * @s: starting point of string to change
+ * @b: value that will replace
  * @n: number of bytes to be changed
  *
- * Return: a pointer to memory areas
+ * Return: changed pointer
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-return (memset(s + n, b, n * sizeof(char)));
+char *p = s;
+for (; n != 0; p++, n--)
+*p = b;
+return (s);
 }
