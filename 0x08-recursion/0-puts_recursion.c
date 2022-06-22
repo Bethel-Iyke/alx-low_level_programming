@@ -9,6 +9,6 @@
 void _puts(char *str)
 
 {
-_puts("Puts with recursion\n");
+_puts("str\n");
 
 }
