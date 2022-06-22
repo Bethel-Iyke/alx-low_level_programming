@@ -1,14 +1,23 @@
 #include "main.h"
 
 /**
- * _puts - prints strings with puts
- * @str: char string input
- * Return: Always 0
+ * _puts_recursion - function that prints strings followed by a new line
+ * @s: string to recurse
+ * Return: output
  */
 
-void _puts(char *str)
+void _puts_recursion(char *s)
 
 {
-_puts("str\n");
+if (*s != '\0')
+{
+_putchar(*s);
+
+_puts_recursion(s + 1);
+}
+else
+{
+_putchar('\n');
+}
 
 }
