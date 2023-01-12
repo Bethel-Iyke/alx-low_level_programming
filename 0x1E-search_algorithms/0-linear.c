@@ -1,6 +1,6 @@
 #include  "search_algos.h"
 
-/*
+/**
 * linear_search - linear search function
 * @array: pointer to array
 * @size: size of array
